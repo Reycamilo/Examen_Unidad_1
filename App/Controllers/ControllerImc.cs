@@ -4,9 +4,8 @@ namespace App.Controllers
 {
     [Route("api/salud")]
     [ApiController]
-    public class SaludController : ControllerBase
+    public class ImcController : ControllerBase
     {
-        // Endpoint GET para calcular IMC
         [HttpGet("imc")]
         public IActionResult CalcularIMC(double peso, double altura)
         {
